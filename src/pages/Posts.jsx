@@ -1,7 +1,7 @@
 export default function Posts() {
     return (
         <>
-            <h1>Посты: </h1>
+            <h1>Лента постов: </h1>
 
             <ol>
                 <li>Пост 1</li>
@@ -9,5 +9,5 @@ export default function Posts() {
                 <li>Пост 3</li>
             </ol>
         </>
-    )
+    );
 }
