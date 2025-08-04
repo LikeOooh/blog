@@ -3,6 +3,7 @@ import Layout from './Layout.jsx';
 import Posts from './pages/Posts.jsx';
 import AboutAuthor from './pages/AboutAuthor.jsx';
 import Contacts from './pages/Contacts.jsx';
+import NotFound from '@/pages/NotFound.jsx';
 
 const router = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
             {
                 path: 'contacts',
                 element: <Contacts />,
+            },
+            {
+                path: '*',
+                element: <NotFound />,
             },
         ],
     },
