@@ -1,9 +1,10 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Layout from './Layout.jsx';
-import Posts from './pages/Posts.jsx';
-import AboutAuthor from './pages/AboutAuthor.jsx';
-import Contacts from './pages/Contacts.jsx';
+import Layout from '@/Layout.jsx';
+import Posts from '@/pages/Posts.jsx';
+import AboutAuthor from '@/pages/AboutAuthor.jsx';
+import Contacts from '@/pages/Contacts.jsx';
 import NotFound from '@/pages/NotFound.jsx';
+import Post from '@/pages/Post.jsx';
 
 const router = createBrowserRouter([
     {
@@ -25,6 +26,11 @@ const router = createBrowserRouter([
             {
                 path: '*',
                 element: <NotFound />,
+            },
+            {
+                path: 'post/:id',
+                element: <Post />,
+                errorElement: <h2>Что-то пошло не так 😢</h2>,
             },
         ],
     },

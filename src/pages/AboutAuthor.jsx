@@ -1,4 +1,7 @@
+import { useNavigate } from 'react-router-dom';
+
 export default function AboutAuthor() {
+    const navigate = useNavigate();
     return (
         <>
             <h1>Об авторе</h1>
@@ -8,6 +11,8 @@ export default function AboutAuthor() {
                 eum ex incidunt, ipsa ipsam laboriosam nemo nesciunt placeat provident qui quia repellat sint veniam
                 voluptate.
             </span>
+
+            <button onClick={() => navigate('/')}>Перейти к постам</button>
         </>
     );
 }
